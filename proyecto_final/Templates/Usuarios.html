@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+    {% for usuario in usuarios %}
+        {{usuario.nombre}}
+        {{usuario.edad}}
+        {{usuario.fecha_alta}}
+        {{usuario.DNI}}<br>
+
+    {% endfor %} 
+
+{% endblock %}
